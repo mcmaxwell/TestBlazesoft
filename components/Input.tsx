@@ -1,3 +1,4 @@
+'use client'
 import { IInputProps } from '@/lib/types'
 import { FC } from 'react'
 

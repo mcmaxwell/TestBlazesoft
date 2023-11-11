@@ -1,3 +1,4 @@
+'use client'
 import { IModalProps } from '@/lib/types'
 
 const Modal: React.FC<IModalProps> = ({ isOpen, onClose, children }) => {

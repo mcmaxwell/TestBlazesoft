@@ -1,3 +1,4 @@
+'use client'
 import { ChangeEvent, FC } from 'react'
 
 interface TextareaProps {
