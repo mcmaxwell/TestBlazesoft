@@ -14,6 +14,7 @@ export const BookSlice = createSlice({
         addBook: (state, action: PayloadAction<IBookProps>) => {
             const book = action.payload
             state.bookList.find((i: IBookProps) => i.id === book.id)
+            book.price = Number(book.price).toFixed(2)
             state.bookList.unshift(book)
 
             toast.success('Item added to list')

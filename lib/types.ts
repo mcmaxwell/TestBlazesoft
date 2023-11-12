@@ -30,3 +30,15 @@ export interface IInputProps {
     onChange: (e: ChangeEvent<HTMLInputElement>) => void
     required?: boolean
 }
+
+export interface ITextareaProps {
+    label: string
+    value: string | number
+    name: string
+    placeholder: string
+    error: boolean
+    disabled?: boolean
+    onChange: (e: ChangeEvent<HTMLTextAreaElement>) => void
+    maxLength?: number
+    required?: boolean
+}

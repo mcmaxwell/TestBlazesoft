@@ -1,19 +1,9 @@
 'use client'
-import { ChangeEvent, FC } from 'react'
 
-interface TextareaProps {
-    label: string
-    value: string | number
-    name: string
-    placeholder: string
-    error: boolean
-    disabled?: boolean
-    onChange: (e: ChangeEvent<HTMLTextAreaElement>) => void
-    maxLength?: number
-    required?: boolean
-}
+import { ITextareaProps } from '@/lib/types'
+import { FC } from 'react'
 
-const Textarea: FC<TextareaProps> = ({
+const Textarea: FC<ITextareaProps> = ({
     label,
     value,
     name,
