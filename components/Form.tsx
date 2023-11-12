@@ -15,7 +15,7 @@ const Form: React.FC<FromProps> = ({ setShowModal, ...data }) => {
     const dispatch = useAppDispatch()
     const bookName = useInput(name ? name : '')
     const bookPrice = useInput(price ? price : '0.00')
-    const bookCategory = useInput(category ? category : 'Mystery')
+    const bookCategory = useInput(category ? category : '')
     const bookDescription = useTextarea(description ? description : '')
 
     const onSubmit = (e: FormEvent) => {
