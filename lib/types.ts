@@ -29,6 +29,7 @@ export interface IInputProps {
     disabled?: boolean
     onChange: (e: ChangeEvent<HTMLInputElement>) => void
     required?: boolean
+    autoFocus?: boolean
 }
 
 export interface ITextareaProps {

@@ -24,20 +24,22 @@ const Book = (book: IBookProps, key: string) => {
     return (
         <>
             <div
-                className='book bg-white border border-gray-200 rounded-lg shadow p-5 cursor-pointer'
+                className='book bg-white border border-gray-200 rounded-lg shadow p-5 cursor-pointer flex flex-col'
                 key={key}
-                onClick={() => editBook()}
             >
-                <h4 className='mb-2 text-2xl font-bold tracking-tight text-gray-900'>
-                    {name}
-                </h4>
-                <span>{price}</span>
-                <div>{category}</div>
-                <div className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
-                    {description}
-                </div>
+                <button className='text-left' onClick={() => editBook()}>
+                    <h4 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 break-words'>
+                        {name}
+                    </h4>
+                    <span>{price}</span>
+                    <div>{category}</div>
+                    <div className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
+                        {description}
+                    </div>
+                </button>
+
                 <button
-                    className='bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded'
+                    className='bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-auto'
                     onClick={handlerRemoveBook}
                 >
                     Remove

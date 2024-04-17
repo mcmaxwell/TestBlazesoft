@@ -50,6 +50,7 @@ const Form: React.FC<FromProps> = ({ setShowModal, ...data }) => {
                     name='name'
                     placeholder='Book name'
                     required
+                    autoFocus={true}
                     {...bookName}
                 />
                 <Input

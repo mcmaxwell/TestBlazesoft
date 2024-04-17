@@ -12,7 +12,8 @@ const Input: FC<IInputProps> = ({
     disabled,
     onChange,
     required = false,
-}) => {
+    autoFocus,
+}: IInputProps) => {
     return (
         <div className='mb-4'>
             <label
@@ -30,6 +31,7 @@ const Input: FC<IInputProps> = ({
                     onChange={onChange}
                     disabled={disabled}
                     required={required}
+                    autoFocus={autoFocus}
                 />
             </label>
             {error && (
